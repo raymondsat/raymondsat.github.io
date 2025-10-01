@@ -1,290 +1,183 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>张三的博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="分享关于人工智能、编程和技术创新的思考与实践">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>raymond的博客 - 探索AI与技术的奇妙世界</title><meta name="author" content="raymond"><meta name="copyright" content="raymond"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="分享关于人工智能、编程和技术创新的思考与实践">
 <meta property="og:type" content="website">
-<meta property="og:title" content="张三的博客">
+<meta property="og:title" content="raymond的博客">
 <meta property="og:url" content="https://raymondsat.github.io/index.html">
-<meta property="og:site_name" content="张三的博客">
+<meta property="og:site_name" content="raymond的博客">
 <meta property="og:description" content="分享关于人工智能、编程和技术创新的思考与实践">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="张三">
+<meta property="og:image" content="https://raymondsat.github.io/img/butterfly-icon.png">
+<meta property="article:author" content="raymond">
 <meta property="article:tag" content="AI">
 <meta property="article:tag" content="人工智能">
 <meta property="article:tag" content="技术博客">
 <meta property="article:tag" content="编程">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="张三的博客" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
-
-<meta name="generator" content="Hexo 8.0.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">张三的博客</a>
-      </h1>
+<meta name="twitter:image" content="https://raymondsat.github.io/img/butterfly-icon.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "raymond的博客",
+  "alternateName": [
+    "探索AI与技术的奇妙世界",
+    "raymondsat.github.io"
+  ],
+  "url": "https://raymondsat.github.io/"
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://raymondsat.github.io/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
       
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">探索AI与技术的奇妙世界</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://raymondsat.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
 
-      <div class="outer">
-        <section id="main">
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
   
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/10/01/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2025-10-01T13:51:26.855Z" itemprop="datePublished">2025-10-01</time>
-</a>
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/10/01/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
     
-    <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://raymondsat.github.io/2025/10/01/hello-world/" data-id="cuidf67sXIH43JifPY91YKiM0" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-    </footer>
-  </div>
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
   
-</article>
-
-
-
-  
-    <article id="post-ai的未来发展趋势与挑战" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/10/01/ai%E7%9A%84%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF%E4%B8%8E%E6%8C%91%E6%88%98/" class="article-date">
-  <time class="dt-published" datetime="2025-10-01T02:00:00.000Z" itemprop="datePublished">2025-10-01</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/AI%E6%8A%80%E6%9C%AF/">AI技术</a>►<a class="article-category-link" href="/categories/AI%E6%8A%80%E6%9C%AF/%E8%A1%8C%E4%B8%9A%E8%B6%8B%E5%8A%BF/">行业趋势</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/10/01/ai%E7%9A%84%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF%E4%B8%8E%E6%8C%91%E6%88%98/">AI的未来发展趋势与挑战</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="AI的未来发展趋势与挑战"><a href="#AI的未来发展趋势与挑战" class="headerlink" title="AI的未来发展趋势与挑战"></a>AI的未来发展趋势与挑战</h1><p>随着科技的飞速发展，人工智能（AI）已经从实验室走进了我们的日常生活和工作。从智能助手到自动驾驶，从医疗诊断到金融分析，AI正在各个领域展现出强大的潜力。那么，AI的未来发展会呈现哪些趋势？又会面临怎样的挑战呢？</p>
-<h2 id="一、AI的主要发展趋势"><a href="#一、AI的主要发展趋势" class="headerlink" title="一、AI的主要发展趋势"></a>一、AI的主要发展趋势</h2><h3 id="1-大语言模型的持续演进"><a href="#1-大语言模型的持续演进" class="headerlink" title="1. 大语言模型的持续演进"></a>1. 大语言模型的持续演进</h3><p>近年来，以GPT系列、Claude、Gemini等为代表的大语言模型（LLM）取得了突破性进展。这些模型不仅能够理解和生成人类语言，还能进行复杂的推理和创作。未来，大语言模型将朝着更加专业化、个性化的方向发展，针对特定行业和领域的垂直模型将大量涌现。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 示例：使用大语言模型进行文本生成</span></span><br><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> pipeline</span><br><span class="line"></span><br><span class="line">generator = pipeline(<span class="string">&quot;text-generation&quot;</span>, model=<span class="string">&quot;gpt2&quot;</span>)</span><br><span class="line">result = generator(<span class="string">&quot;人工智能的未来&quot;</span>, max_length=<span class="number">50</span>)</span><br><span class="line"><span class="built_in">print</span>(result[<span class="number">0</span>][<span class="string">&#x27;generated_text&#x27;</span>])</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-多模态AI的普及"><a href="#2-多模态AI的普及" class="headerlink" title="2. 多模态AI的普及"></a>2. 多模态AI的普及</h3><p>多模态AI指的是能够同时处理文本、图像、音频、视频等多种数据类型的人工智能系统。未来，多模态AI将成为主流，能够更全面地理解和交互现实世界。例如，一个智能助手不仅能理解你的语言指令，还能识别你手势、表情，甚至理解环境中的声音和图像。</p>
-<h3 id="3-AI与边缘计算的结合"><a href="#3-AI与边缘计算的结合" class="headerlink" title="3. AI与边缘计算的结合"></a>3. AI与边缘计算的结合</h3><p>随着物联网设备的普及，AI技术正在从云端向边缘设备迁移。边缘AI可以在本地处理数据，减少延迟，提高隐私保护，同时减轻云端服务器的负担。未来，我们将看到更多搭载AI能力的智能设备，从智能家居到工业传感器，无处不在。</p>
-<h2 id="二、AI发展面临的挑战"><a href="#二、AI发展面临的挑战" class="headerlink" title="二、AI发展面临的挑战"></a>二、AI发展面临的挑战</h2><h3 id="1-数据隐私与安全问题"><a href="#1-数据隐私与安全问题" class="headerlink" title="1. 数据隐私与安全问题"></a>1. 数据隐私与安全问题</h3><p>AI系统的训练和运行依赖大量数据，这引发了数据隐私和安全的担忧。如何在保护个人隐私的同时充分利用数据训练AI模型，是一个亟待解决的问题。联邦学习、差分隐私等技术为解决这一问题提供了可能的方向。</p>
-<h3 id="2-算法偏见与公平性"><a href="#2-算法偏见与公平性" class="headerlink" title="2. 算法偏见与公平性"></a>2. 算法偏见与公平性</h3><p>AI系统可能会继承训练数据中的偏见，导致不公平的决策结果。例如，在招聘、贷款、司法等领域，如果AI模型存在偏见，可能会对特定群体造成歧视。如何确保AI系统的公平性，是AI伦理研究的重要课题。</p>
-<h3 id="3-就业结构的变化"><a href="#3-就业结构的变化" class="headerlink" title="3. 就业结构的变化"></a>3. 就业结构的变化</h3><p>AI技术的广泛应用将改变就业市场的结构，一些重复性劳动可能会被AI取代，同时也会创造新的就业机会。社会需要做好准备，通过教育和培训帮助人们适应这一变化。</p>
-<h2 id="三、我们的应对策略"><a href="#三、我们的应对策略" class="headerlink" title="三、我们的应对策略"></a>三、我们的应对策略</h2><p>面对AI的快速发展，我们既不能盲目乐观，也不应过度担忧。以下是几点建议：</p>
-<ol>
-<li><p><strong>持续学习，提升技能</strong>：保持学习的态度，掌握与AI协作的能力，是适应未来的关键。</p>
-</li>
-<li><p><strong>关注伦理，引导发展</strong>：在推动AI技术发展的同时，也要关注其伦理影响，确保AI朝着有利于人类的方向发展。</p>
-</li>
-<li><p><strong>开放合作，共享成果</strong>：AI技术的发展需要全球范围内的开放合作，共享数据和研究成果，共同应对全球性挑战。</p>
-</li>
-</ol>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>AI的未来充满了无限可能，也面临着诸多挑战。作为技术的使用者和创造者，我们有责任引导AI技术的健康发展，让人工智能更好地服务于人类社会的进步。让我们共同期待一个人与AI和谐共存的未来！</p>
-<p>你对AI的未来有什么看法？欢迎在评论区留言讨论！</p>
-
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'raymond的博客',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><meta name="generator" content="Hexo 8.0.0"></head><body><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">raymond的博客</span></a></span><div id="menus"></div></nav><div id="site-info"><h1 id="site-title">raymond的博客</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/10/01/ai%E7%9A%84%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF%E4%B8%8E%E6%8C%91%E6%88%98/" title="AI的未来发展趋势与挑战">AI的未来发展趋势与挑战</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-10-01T02:00:00.000Z" title="发表于 2025-10-01 10:00:00">2025-10-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/AI%E6%8A%80%E6%9C%AF/">AI技术</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/AI%E6%8A%80%E6%9C%AF/%E8%A1%8C%E4%B8%9A%E8%B6%8B%E5%8A%BF/">行业趋势</a></span></div><div class="content">AI的未来发展趋势与挑战随着科技的飞速发展，人工智能（AI）已经从实验室走进了我们的日常生活和工作。从智能助手到自动驾驶，从医疗诊断到金融分析，AI正在各个领域展现出强大的潜力。那么，AI的未来发展会呈现哪些趋势？又会面临怎样的挑战呢？ 一、AI的主要发展趋势1. 大语言模型的持续演进近年来，以GPT系列、Claude、Gemini等为代表的大语言模型（LLM）取得了突破性进展。这些模型不仅能够理解和生成人类语言，还能进行复杂的推理和创作。未来，大语言模型将朝着更加专业化、个性化的方向发展，针对特定行业和领域的垂直模型将大量涌现。 123456# 示例：使用大语言模型进行文本生成from transformers import pipelinegenerator = pipeline(&quot;text-generation&quot;, model=&quot;gpt2&quot;)result = generator(&quot;人工智能的未来&quot;, max_length=50)print(result[0][&#x27;generated_text&#x27;])...</div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">raymond</div><div class="author-info-description">分享关于人工智能、编程和技术创新的思考与实践</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/10/01/ai%E7%9A%84%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF%E4%B8%8E%E6%8C%91%E6%88%98/" title="AI的未来发展趋势与挑战">AI的未来发展趋势与挑战</a><time datetime="2025-10-01T02:00:00.000Z" title="发表于 2025-10-01 10:00:00">2025-10-01</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/AI%E6%8A%80%E6%9C%AF/"><span class="card-category-list-name">AI技术</span><span class="card-category-list-count">1</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/AI%E6%8A%80%E6%9C%AF/%E8%A1%8C%E4%B8%9A%E8%B6%8B%E5%8A%BF/"><span class="card-category-list-name">行业趋势</span><span class="card-category-list-count">1</span></a></li></ul></li>
+          </ul></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://raymondsat.github.io/2025/10/01/ai%E7%9A%84%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF%E4%B8%8E%E6%8C%91%E6%88%98/" data-id="cuidDI-kBs-U38_EVYnIZ5gia" data-title="AI的未来发展趋势与挑战" class="article-share-link"><span class="fa fa-share">分享</span></a>
+  
+    <ul class="card-archive-list">
       
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/10/">
+            <span class="card-archive-list-date">
+              十月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
       
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/AI%E6%8A%80%E6%9C%AF/">AI技术</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI%E6%8A%80%E6%9C%AF/%E8%A1%8C%E4%B8%9A%E8%B6%8B%E5%8A%BF/">行业趋势</a></li></ul></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/10/">十月 2025</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2025/10/01/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2025/10/01/ai%E7%9A%84%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF%E4%B8%8E%E6%8C%91%E6%88%98/">AI的未来发展趋势与挑战</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2025 张三<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-10-01T14:39:51.718Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By raymond</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.0.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.0</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
