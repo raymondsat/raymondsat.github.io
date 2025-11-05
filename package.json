@@ -1,0 +1,12 @@
+{
+  "name": "raymondsat-github-io",
+  "version": "1.0.0",
+  "description": "Personal blog built with Hugo and Hugoplate theme",
+  "scripts": {
+    "dev": "hugo server",
+    "build": "hugo --gc --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.0.0"
+  }
+}

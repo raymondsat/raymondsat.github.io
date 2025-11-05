@@ -48,8 +48,8 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Install TailwindCSS
-        run: npm install -D tailwindcss
+      - name: Install dependencies
+        run: npm install
 
       - name: Setup Pages
         id: pages
