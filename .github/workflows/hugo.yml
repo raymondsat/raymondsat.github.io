@@ -25,11 +25,17 @@ jobs:
     env:
       HUGO_VERSION: 0.152.2
       GO_VERSION: 1.25.3
+      NODE_VERSION: 22.x
     steps:
       - name: Install Go
         uses: actions/setup-go@v5
         with:
           go-version: ${{ env.GO_VERSION }}
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: Install Hugo CLI
         run: |
@@ -41,6 +47,9 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+
+      - name: Install TailwindCSS
+        run: npm install -D tailwindcss
 
       - name: Setup Pages
         id: pages
